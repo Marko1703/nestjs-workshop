@@ -1,6 +1,5 @@
 import { IsString, Length, IsNumber } from "class-validator";
 
-
 export class CreateSongDto {
     @IsString()
     @Length(3, 30)

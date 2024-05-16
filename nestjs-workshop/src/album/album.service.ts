@@ -12,7 +12,7 @@ export class AlbumService {
   ) {}
 
   async create(createAlbumDto: CreateAlbumDto) {
-    return this.albumRepo.save(createAlbumDto);   
+    return this.albumRepo.save(createAlbumDto);
   }
 
   async findAll() {

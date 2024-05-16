@@ -7,6 +7,8 @@ import { ConfigService } from '@nestjs/config/dist';
 import { SongsModule } from './songs/songs.module';
 import { ArtistsModule } from './artists/artists.module';
 import { AlbumModule } from './album/album.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -32,6 +34,8 @@ import { AlbumModule } from './album/album.module';
     SongsModule,
     ArtistsModule,
     AlbumModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],

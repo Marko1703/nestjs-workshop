@@ -7,6 +7,7 @@ import {
   JoinColumn,
   PrimaryGeneratedColumn,
   ManyToMany,
+  JoinTable,
 } from 'typeorm';
 
 @Entity()
@@ -31,5 +32,6 @@ export class Album {
   artist: Artist;
 
   @ManyToMany(() => Song, (songs) => songs.album)
+  @JoinTable()
   songs: Song[];
 }
